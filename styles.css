@@ -930,7 +930,7 @@ a .slider__more-btn {
 .examinations__img {
   width: 1076;
   height: 500px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -993,4 +993,60 @@ a .slider__more-btn {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 120px;
+}
+
+/* --------------------------------------- SPAIN EDU -------------------------------------------------------------- */
+
+/* SPAINEDU */
+
+.spainedu__container {
+  max-width: 1076px;
+  margin: 0 auto;
+}
+
+.spainedu__title {
+  color: #333333;
+  font-size: 48px;
+  line-height: 67px;
+  font-family: "Circe Extra";
+  margin-bottom: 30px;
+}
+
+.spainedu__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  width: 636px;
+  margin-bottom: 35px;
+}
+
+.spainedu__topic {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 30px;
+  width: 636px;
+}
+
+.spainedu__visa-fieldset {
+  width: 636px;
+  border: 6px solid #ec1b2e;
+  margin-bottom: 67px;
+}
+
+.spainedu__visa-fieldset p {
+  font-size: 16px;
+  font-family: "Circe Extra";
+  padding: 15px 25px;
+}
+
+.spainedu__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spainedu__logo {
+  margin-top: 70px;
 }
