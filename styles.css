@@ -584,6 +584,11 @@ a .slider__more-btn {
 
 .events__item-img {
   width: 416px;
+  transition: 0.25s ease;
+}
+
+.events__item-img:hover {
+  opacity: 0.8;
 }
 
 .events__item-title {
@@ -993,6 +998,13 @@ a .slider__more-btn {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 120px;
+  border: 2px solid #ec1b2e;
+  transition: 0.2s ease-in;
+}
+
+.examinations__btn:hover {
+  background-color: #fff;
+  color: #333333;
 }
 
 /* --------------------------------------- SPAIN EDU -------------------------------------------------------------- */
