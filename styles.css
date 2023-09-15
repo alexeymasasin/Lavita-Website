@@ -494,6 +494,11 @@ a .slider__more-btn {
 
 .exam__item-img {
   height: 200px;
+  transition: 0.25s ease;
+}
+
+.exam__item-img:hover {
+  opacity: 0.8;
 }
 
 .exam__item-title {
@@ -877,7 +882,7 @@ a .slider__more-btn {
 }
 
 .director__schedule__li:before {
-  content: url(./about/path/Rectangle55.svg);
+  content: url(./home/path/Rectangle55.svg);
   width: 8px;
   height: 8px;
   margin-right: 15px;
@@ -908,4 +913,84 @@ a .slider__more-btn {
   color: #ec1b2e;
   font-weight: 700;
   font-size: 16px;
+}
+
+/* -------------------------------------------- EXAMS ----------------------------------------------------------- */
+
+.examinations__container {
+  max-width: 1076px;
+  margin: 0 auto;
+}
+
+.examinations__text__container {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.examinations__img {
+  width: 1076;
+  height: 500px;
+  margin-bottom: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.examinations__title {
+  color: #333333;
+  font-size: 48px;
+  line-height: 67px;
+  text-align: center;
+  font-family: "Circe Extra";
+  margin-bottom: 67px;
+}
+
+.examinations__desc {
+  width: 636px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 auto 60px;
+  color: #333333;
+}
+
+.examinations__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.examinations__item-ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.examinations__item-li {
+  display: flex;
+}
+
+.examinations__item-li:before {
+  content: url(./home/path/Rectangle55.svg);
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+}
+
+.examinations__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.examinations__btn {
+  color: #fff;
+  background-color: #ec1b2e;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 120px;
 }
