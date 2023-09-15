@@ -321,8 +321,17 @@ a .slider__more-btn {
   transition: 0.5s ease-in-out;
 }
 
+.about__logo {
+  opacity: 0.05;
+  transition: 0.5s ease-in-out;
+}
+
 .about__fieldset:hover {
   border: 10px solid #ec1b2e;
+}
+
+.about__items:hover .about__logo {
+  opacity: 1;
 }
 
 .about__legend {
