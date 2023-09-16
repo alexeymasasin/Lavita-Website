@@ -85,7 +85,9 @@
           </div>
           <div class="header__top__item">
             <a href="#"
-              ><button class="header__top__signup">Запись на курсы</button></a
+              ><button id="courses-signup-btn" class="header__top__signup">
+                Запись на курсы
+              </button></a
             >
           </div>
         </div>
@@ -159,6 +161,137 @@
       </div>
     </header>
     <main class="main">
+      <!-- SCROLL TO TOP BTN -->
+      <button onclick="scrollToTopFunc()" id="BtnScrollToTop">Наверх</button>
+      <!-- EXAMINATIONS -->
+      <div id="signup-modal" class="signup-modal">
+        <div class="signup-modal__box">
+          <form action="" method="get">
+            <fieldset class="signup-modal__fieldset">
+              <legend class="signup-modal__legend">
+                <h3 class="signup-modal__title">Заявка на набор</h3>
+              </legend>
+
+              <div class="signup-modal__box__content">
+                <p>
+                  Укажите свои контактные данные, чтобы мы смогли связаться с
+                  вами:
+                </p>
+                <div class="signup-modal__box__textbox-div">
+                  <label
+                    class="signup-modal-label"
+                    for="signup-modal__box_lastname"
+                    >Фамилия <span class="c-red">*</span> </label
+                  ><input
+                    id="signup-modal__box_lastname"
+                    type="text"
+                    required
+                  />
+                </div>
+
+                <div class="signup-modal__box__textbox-div">
+                  <label
+                    class="signup-modal-label"
+                    for="signup-modal__box_firstname"
+                    >Имя <span class="c-red">*</span> </label
+                  ><input
+                    id="signup-modal__box_firstname"
+                    type="text"
+                    required
+                  />
+                </div>
+
+                <div class="signup-modal__box__textbox-div">
+                  <label
+                    class="signup-modal-label"
+                    for="signup-modal__box_middlename"
+                    >Отчество </label
+                  ><input id="signup-modal__box_middlename" type="text" />
+                </div>
+
+                <div class="signup-modal__box__textbox-div">
+                  <label class="signup-modal-label" for="signup-modal__box_tel"
+                    >Номер телефона <span class="c-red">*</span> </label
+                  ><input id="signup-modal__box_tel" type="tel" required />
+                </div>
+
+                <div class="signup-modal__box__textbox-div">
+                  <label class="signup-modal-label" for="signup-modal__box_city"
+                    >Город <span class="c-red">*</span> </label
+                  ><select id="signup-modal__box_city">
+                    <option value="stpetersburg">Санкт-Петербург</option>
+                    <option value="moscow">Москва</option>
+                    <option value="ekaterinburg">Екатринбург</option>
+                    <option value="krasnoyarsk">Красноярск</option>
+                  </select>
+                </div>
+
+                <div class="signup-modal__box__checkbox-div">
+                  <input
+                    id="signup-modal__box_16plus"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="signup-modal__box_16plus">
+                    Нажимая на кнопку "Отправить", я подтверждаю, что мой
+                    возраст 16 или более лет <span class="c-red">*</span>
+                  </label>
+                </div>
+
+                <div class="signup-modal__box__checkbox-div">
+                  <input
+                    id="signup-modal__box_privacy"
+                    type="checkbox"
+                    required
+                  />
+                  <label for="signup-modal__box_privacy">
+                    Нажимая на кнопку "Отправить", я подтверждаю, что
+                    ознакомился и согласен с
+                    <a class="c-red" href="#">Политикой конфиденциальности</a>
+                    сайта
+                    <span class="c-red">*</span>
+                  </label>
+                </div>
+
+                <div class="signup-modal__box__checkbox-div">
+                  <input id="signup-modal__box_parent" type="checkbox" />
+                  <label for="signup-modal__box_parent">
+                    Являюсь представителем
+                  </label>
+                </div>
+                <div class="signup-modal__box_submit-btns">
+                  <div class="signup-modal__box_submit-btns_left">
+                    <button
+                      id="signup-modal__box_submit-btn"
+                      class="signup-modal__box_submit-btn"
+                      type="submit"
+                    >
+                      Отправить
+                    </button>
+
+                    <button
+                      id="signup-modal__box_reset-btn"
+                      class="signup-modal__box_reset-btn"
+                      type="reset"
+                    >
+                      Сбросить
+                    </button>
+                  </div>
+                  <div class="signup-modal__box_submit-btns_right">
+                    <button
+                      id="signup-modal__box_close-btn"
+                      class="signup-modal__box_close-btn"
+                      type="button"
+                    >
+                      Закрыть
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <section class="examinations">
         <div class="examinations__container">
           <img
