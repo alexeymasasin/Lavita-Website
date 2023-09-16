@@ -15,6 +15,8 @@ window.onscroll = function () {
   }
 };
 
+alert("a");
+
 function scrollToTopFunc() {
   document.body.scrollTop = 0; // Safari
   document.documentElement.scrollTop = 0; // Chrome, Exp, Moz, Opera
